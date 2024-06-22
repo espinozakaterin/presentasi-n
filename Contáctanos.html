@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+</head>
+
+<body>
+    <nav class="navbar" role="navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://www.facebook.com/barosdetallesyaccesorios?mibextid=LQQJ4d">
+                <img src="Logo.jpg" alt="cabecera" width="28" height="28" />
+                <h2>CONTÁCTANOS</h2>
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarMenuOption">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbarMenuOption" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item" href="index.html">Página Principal</a>
+                <a class="navbar-item" href="Catálogo.html">Catálogo Completo</a>
+                <a class="navbar-item" href="Contáctanos.html">Contáctanos</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <h1 class="title">Contáctanos</h1>
+
+            <p>Si tienes alguna duda nos puedes dejar tu información y con gusto te contactaremos o nos puedes escribir
+                directamente por WhatsApp a la sucursal donde deseas tu envío.</p>
+
+            <h2 class="subtitle">Números de Teléfonos / WhatsApp de la tienda:</h2>
+            <ul>
+                <li>Tegucigalpa: +504 3206-2552</li>
+            </ul>
+            <br>
+            <h2 class="subtitle">Dirección de cada tienda:</h2>
+            <ul>
+                <li>Tegucigalpa: Modalidad en línea únicamente</li>
+            </ul>
+            <br>
+            <h2 class="subtitle">Correo electrónico:</h2>
+            <p>Correo electrónico: <a href="barosdetalles@gmail.com">barosdetalles@gmail.com</a></p>
+            <br>
+            <h2 class="subtitle">Horarios de atención:</h2>
+            <p>Lunes a Viernes: 8:00 AM a 5:00 PM</p>
+            <p>Sábado: 8:00 AM a 12:00 MD</p>
+            <p>Domingo: Cerrado</p>
+        </div>
+        <br>
+        <div class="container">
+            <form action="index.html" method="post">
+                <div class="field">
+                    <label class="label" for="nombre">Nombre:</label>
+                    <div class="control">
+                        <input class="input" type="text" name="nombre" id="nombre" required autocapitalize="on"
+                            placeholder="Nombre completo" />
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label" for="correo">Correo:</label>
+                    <div class="control">
+                        <input class="input" type="email" name="correo" id="correo" required autocapitalize="off" />
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label" for="birthdate">Fecha de Nacimiento:</label>
+                    <div class="control">
+                        <input class="input" type="date" name="birthdate" id="birthdate" required autocomplete="on" />
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label" for="mensaje">Mensaje:</label>
+                    <div class="control">
+                        <textarea class="textarea" name="mensaje" id="mensaje" required></textarea>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label" for="color">Color Favorito:</label>
+                    <div class="control">
+                        <input class="input" type="color" name="color" id="color" required />
+                    </div>
+                </div>
+                <div class="control">
+                    <button class="button is-link" type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Katerin Aguilar Fanmeti 2024</a>. The source code is licensed
+                    <a href="https://www.facebook.com/barosdetallesyaccesorios?mibextid=LQQJ4d">BAROS'S Detalles</a>. The website content Fanmeti
+            </p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            $navbarBurgers.forEach(el => {
+                el.addEventListener('click', () => {
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
